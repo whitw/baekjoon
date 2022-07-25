@@ -3,7 +3,7 @@ from collections import deque
 import time
 
 def pressable(i, broken):
-    bi = set(str(i))
+    bi = str(i)
     for b in bi:
         if broken[int(b)]:
             return False
