@@ -1,3 +1,6 @@
 *.exe
+.vs
+.vscode
 tasks.json
 launch.json
+playground.*
