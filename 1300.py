@@ -3,18 +3,16 @@ def solve(N, k):
     gtk = 10**10+1 #이 숫자보다 작은 숫자들의 갯수가 k보다 많거나 같다
     while(ltk + 1 != gtk):
         testk = (ltk + gtk) // 2
-        lttk = 0
+        lttk = 0 #testk보다 작은 숫자들의 갯수
         for i in range(1, min(N, testk)+1):
-            lttk += min(N, ((testk - 1) // i))
+            lttk += min(N, ((testk-1) // i))
         if lttk < k:
             ltk = testk
         else:
             gtk = testk
         #print(f"\ttestk={testk}, lttk={lttk}, k={k}")
-    return ltk
-    #이왜맞.... 틀린것보다 더 큰일이다
-    #분석이 필요함
-
+    return gtk-1
+    
 
 def answer(N, k):
     testarr = [0]
