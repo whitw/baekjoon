@@ -11,7 +11,7 @@ def solve(N, k):
         else:
             gtk = testk
         #print(f"\ttestk={testk}, lttk={lttk}, k={k}")
-    return gtk-1
+    return ltk
     
 
 def answer(N, k):
@@ -47,7 +47,5 @@ if __name__ == '__main__':
     k = int(input())
     print(solve(N,k))
     #print("answer:", answer(N, k))
-    #test(10000, N=10)
-    prevPrime = 2
-    maxdist = 0
+    #test(10000, N=1000)
             
