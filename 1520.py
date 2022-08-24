@@ -28,6 +28,7 @@ def solve(N, M, board):
 
 if __name__ == '__main__':
     read = sys.stdin.readline
+    sys.setrecursionlimit(500*500+1)
     N, M = map(int, read().split())
     board = [list(map(int, read().split())) for _ in range(N)]
     print(solve(N, M, board))
