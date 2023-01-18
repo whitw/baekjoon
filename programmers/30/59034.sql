@@ -1,0 +1,2 @@
+-- ANIMAL_INS 테이블에서 모든 레코드를 ANIMAL_ID ASC 순으로 정렬해서 선택
+SELECT * FROM ANIMAL_INS ORDER BY ANIMAL_ID
